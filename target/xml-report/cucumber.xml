@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="17">
+    <testcase classname="bugs_feature" name="bug01" time="5.968">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given user goes to webpage  "https://qa-recruitment-task.netlify.app/"......passed
+Then user clicks more than two hundred dollars price filter.................passed
+And user clicks art filter..................................................passed
+Then user sees no result....................................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.BugsStepDefs.user_sees_no_result(BugsStepDefs.java:76)
+	at ✽.user sees no result(file:///C:/Users/Acer/IdeaProjects/bejamas_task/./src/test/resources/features/Bugs.feature:10)
+]]></failure>
+    </testcase>
+    <testcase classname="bugs_feature" name="bug02" time="1.507">
+        <failure message="expected:&lt;6&gt; but was:&lt;4&gt;" type="java.lang.AssertionError"><![CDATA[Given user goes to webpage  "https://qa-recruitment-task.netlify.app/"......passed
+When user goes to product list..............................................passed
+Then user verify that product list contains 6 artworks on the page..........failed
+
+StackTrace:
+java.lang.AssertionError: expected:<6> but was:<4>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepdefinitions.BugsStepDefs.user_verify_that_product_list_contains_artworks_on_the_page(BugsStepDefs.java:31)
+	at ✽.user verify that product list contains 6 artworks on the page(file:///C:/Users/Acer/IdeaProjects/bejamas_task/./src/test/resources/features/Bugs.feature:16)
+]]></failure>
+    </testcase>
+    <testcase classname="bugs_feature" name="bug03" time="7.758">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given user goes to webpage  "https://qa-recruitment-task.netlify.app/"......passed
+When user clicks any Add to Chart bar.......................................passed
+And user clicks Clear button................................................passed
+Then counter badge only if the cart includes some items.....................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at org.junit.Assert.assertFalse(Assert.java:75)
+	at stepdefinitions.BugsStepDefs.counter_badge_only_if_the_cart_includes_some_items(BugsStepDefs.java:52)
+	at ✽.counter badge only if the cart includes some items(file:///C:/Users/Acer/IdeaProjects/bejamas_task/./src/test/resources/features/Bugs.feature:22)
+]]></failure>
+    </testcase>
+    <testcase classname="bugs_feature" name="bug04" time="1.528">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given user goes to webpage  "https://qa-recruitment-task.netlify.app/"......passed
+Then counter badge only if the cart includes some items.....................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at org.junit.Assert.assertFalse(Assert.java:75)
+	at stepdefinitions.BugsStepDefs.counter_badge_only_if_the_cart_includes_some_items(BugsStepDefs.java:52)
+	at ✽.counter badge only if the cart includes some items(file:///C:/Users/Acer/IdeaProjects/bejamas_task/./src/test/resources/features/Bugs.feature:26)
+]]></failure>
+    </testcase>
+</testsuite>
